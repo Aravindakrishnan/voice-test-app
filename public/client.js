@@ -34,7 +34,7 @@ btnMute.onclick = toggleAudio;
 
 function initiateCall(audio) {
     streamConstraints = {
-        video: true,
+        video: false,
         audio: audio
     }
     socket.emit('create or join', roomNumber);
